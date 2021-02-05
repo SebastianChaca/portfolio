@@ -109,8 +109,8 @@ export const projectsContent=[
             english:'Source code of this Page',
             spanish:'Codigo fuente de este Pagina'
         },
-        github:'https://github.com/SebastianChaca/mtg-e-commerce',
-        live:'https://mtg-ecommerce.netlify.app/'
+        github:'https://github.com/SebastianChaca/portfolio',
+        live:'https://sebastianchaca-portfolio.netlify.app/projects'
     }
     
 ]

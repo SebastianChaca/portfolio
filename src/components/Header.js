@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import Sidebar from './Sidebar'
-import {headerContent} from '../content/header'
+import {headerContent} from '../content/data'
 import UkIcon from './UkIcon'
 import SpainIcon from './SpainIcon'
 import { Link, useLocation } from "react-router-dom";

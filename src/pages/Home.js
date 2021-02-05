@@ -1,6 +1,6 @@
 import React from 'react'
 import avatar from '../img/avatar.jpg'
-import {homeContent} from '../content/header'
+import {homeContent} from '../content/data'
 
 export default function Home({language}){
     let content=''

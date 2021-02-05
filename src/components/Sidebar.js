@@ -1,7 +1,7 @@
 import React from 'react'
 import UkIcon from './UkIcon'
 import SpainIcon from './SpainIcon'
-import {headerContent} from '../content/header'
+import {headerContent} from '../content/data'
 import { Link } from "react-router-dom";
 
 

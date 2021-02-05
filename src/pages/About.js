@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {aboutContent} from '../content/header'
+import {aboutContent} from '../content/data'
 
 
 export default function Abour({language}){

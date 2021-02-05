@@ -1,5 +1,5 @@
 import React from 'react'
-import {projectsContent} from '../content/header'
+import {projectsContent} from '../content/data'
 
 export default function Projects({language}){
 
