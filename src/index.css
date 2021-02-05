@@ -1,13 +1,534 @@
 body {
+  background-color: #191A1D;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+Home
+*/
+.avatar{
+  width: 300px;
+  border-radius:150px ;
+  margin: 0 auto;
+  
+}
+.home-container{
+  display: flex;
+  width: 40%;
+  margin: 100px auto;
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+  text-align: center;
+ 
+}
+.text-container{
+  margin: 0 30px;
+}
+.text-container h1{
+  font-size: 50px;
+  
+}
+@media screen and (max-width: 1000px){
+  .home-container{
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+    z-index:  -1000;
+    
+    
+  }
+  .text-container{
+    margin: 10px;
+  }
+   
+  .avatar{
+    width: 200px;
+    position: relative;
+    z-index: -10000 ;
+    
+    
+  }
+}
+
+/* 
+Lang
+*/
+.uk{
+  width: 24px;
+  
+  
+}
+.spain{
+  width: 30px;
+  
+   
+}
+.lang-btn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+
+/* 
+Header
+*/
+header{
+  background-color: #191A1D;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+    
+}
+header hr{
+  display: none;
+}
+nav{
+  width: 100%;
+  background-color: #191A1D;
+  display: flex; 
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+  justify-content: center;
+ 
+}
+
+nav ul{
+  width: 100%;
+  display: flex;
+}
+.nombre h1{
+  font-size: 35px;
+}
+
+.rigth-links{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% repeat(4, 15%) repeat(2, 4%);
+  align-items: center;
+ 
+}
+nav li{    
+  list-style: none;
+  margin-top: 5px;
+  
+}
+nav a {  
+  color:#5e5e5e;
+  text-decoration: none;
+  font-size: 25px;
+  padding-bottom: 20px;
+
+}
+nav a:hover {  
+  color: #fafafa;
+  
+}
+
+.currentPage {  
+  width: 100%;
+  height: 1px;
+  color: #fafafa;
+  border-bottom: 5px solid #4b6cc1;
+  border-radius: 5px;
+  padding-bottom:15px;
+  pointer-events: none;
+  
+  
+}
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .7s;
+}
+nav ul li a,
+nav ul li a {
+  position: relative;
+}
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;  
+  border-bottom: 5px solid #4b6cc1;
+  border-radius: 10px;
+  height: 1px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+nav ul li a:hover:after {  
+  animation: fill 1s forwards;  
+  opacity: 1;
+}
+
+.header-btn{
+  display: none;  
+
+}
+.header-btn span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 8px;  
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+
+@keyframes fill {
+  0% {
+    width: 0%;
+   
+  }
+  50% {
+    width: 100%;
+   
+  }
+  100% {
+    width: 100%;
+    
+    
+  }
+}
+
+@media screen and (max-width: 1000px){
+  nav{
+    animation-name: sidebar-out;
+    animation-duration: 1s;
+  }
+  
+  .rigth-links{
+    display: flex;
+  }
+  .nav-color{
+    background-color: white;
+    animation-name: sidebar-in;
+    animation-duration: 1s;
+  }
+  .nombre-color{
+    color: black;
+    position: relative;
+    z-index: 100;
+    animation-name: sidebar-in;
+    animation-duration: 1s;
+  }
+    
+  .header-btn{
+    display: block;
+    margin-left:auto;
+    margin-right: 0px;
+    background-color: #191A1D;
+    outline: none;
+    border: none;
+    
+  }
+  .header-btn-rotate{
+    transform: rotate(180deg);
+    transition: transform 0.5s linear;
+  }
+  header hr{
+   border: 1px solid rgba(255,255,255,.1);;
+  }
+ 
+  #sebastian a{
+    font-size: 50px;
+  }
+  nav h1{
+    font-size: 30px; 
+  }
+  nav ul{    
+    padding-inline-start: 20px;
+    margin:10px
+    
+  }
+  nav li{
+    display:none;
+    
+  }
+  
+}
+
+
+
+/* 
+Sidebar
+*/
+
+.sidebar{
+  display: none;
+}
+
+@media screen and (max-width: 1000px){
+  .sidebar{
+    display:block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;   
+    width: 100%;
+    height: 100vh;    
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    transition: all 0.5s linear;
+    transform: translate(0,-100%);
+    
+    
+  }
+  .btn-container{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  }
+  .btn-container h1{
+    color: black;
+    margin-left:20px ;
+    font-size: 30px;   
+    
+  }
+  .sidebar-btn-close{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 18px;
+    position: relative;
+    z-index: 1;
+    
+    
+    
+  }
+  aside a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #5e5e5e;
+    
+  }
+  aside ul{
+    padding-inline-start:20px;
+    margin-top: 150px;
+  }
+  aside a:hover{
+    color: #b8afaf;
+  }
+  aside ul hr{
+    border: 1px solid rgba(68, 66, 66, 0.1);;
+    margin-top: 30px;
+    width: 95%;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+  aside li{
+    /* margin-bottom: 40px;
+    margin-top: 40px; */
+  }
+  .show-sidebar{
+    
+    transform: translate(0)
+  }
+  .uk{
+    width: 40px;    
+  }
+  .spain{
+    width: 47px;
+  }
+}
+
+@keyframes sidebar-in {
+  from { opacity:0 }
+  to { opacity:1}
+}
+@keyframes sidebar-out {
+  from { opacity:0 }
+  to { opacity:1}
+}
+
+/* 
+Contact
+*/
+.main-container{
+  background-color:#ebdede;
+  width: 270px;
+  margin: 50px auto;
+  padding: 20px 35px;
+  border-radius: 10px;
+  
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+}
+.contact-container{
+  height: 30px;
+  margin: 20px auto;
+  padding: 10px 0 10px 0px;  
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  background-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.contact-container a{
+  text-decoration: none;
+  color: #191A1D;
+  margin-left: 20px;  
+  font-size: 25px;
+  
+}
+
+.container-text{
+  margin-right: auto;
+}
+
+.linkedin{  
+  color: #194ac5;
+
+}
+.gmail{
+  color: brown;
+}
+.wsp{
+  color: forestgreen;
+}
+/* 
+Project
+*/
+.projects-container{
+  width: 600px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 15px;
+  text-align: center;
+  margin: 30px auto;
+  color: black;
+  background-color:#ebdede;
+  padding: 50px 0 50px 0;
+  border-radius: 20px;
+  justify-content: center;
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+  position: relative;
+    
+}
+.project-card{
+  background-color:white;
+  margin:0px auto;
+  height: 340px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.project-img{
+  background-color: #191A1D;
+  padding: 10px;
+  max-height: 200px;  
+}
+.project-img img{
+  width: 150px;
+  max-height: 150px;
+  vertical-align: middle
+  
+}
+.project-text{
+  margin: 10px 10px 0 15px ;
+  text-align: left;
+  
+  
+}
+.project-text p{
+  width: 100%;
+  min-height: 60px;
+  
+}
+
+.project-btns{
+  margin-top: 20px;
+}
+.project-btns button{
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  background-color: #4b6cc1;  
+  box-shadow: 0 7px 8px -7px black
+}
+.project-btns a{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 800px){
+  .projects-container{
+    display:block;
+    width: 250px;
+    padding: 25px;
+    position: relative;
+    z-index: 0;
+  }
+  .project-card{
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .project-btns a{
+    position:relative
+  }
+}
+/* 
+About
+*/
+.about-container{
+  background-color:#ebdede;
+  color: black;
+  width: 500px;
+  height: 400px;
+  margin: 40px auto;
+  border-radius: 20px;
+  padding: 30px;
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+}
+.about-container p{
+  font-size: 20px;
+}
+.about-tec{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.icon{
+  margin-right: 15px;
+}
+.html{
+  color:chocolate
+}
+.css{
+  color: #0934a1;
+}
+.js{
+  color: rgb(219, 188, 9);
+}
+.react{
+  color: rgb(8, 218, 218);
+}
+.node{
+  color: darkgreen;
+}
+.strapi {
+  color: blueviolet;
+}
+@media screen and (max-width: 800px){
+  /* .about-tec{
+    display:block;
+    text
+  } */
+  .about-container{
+    width: 300px;
+    height: 495px;
+  }
 }
