@@ -39,7 +39,7 @@ export const navLinks = {
   spanish: [
     {
       nombre: "Home",
-      link: "/home",
+      link: "/",
     },
     {
       nombre: "Sobre mí",
