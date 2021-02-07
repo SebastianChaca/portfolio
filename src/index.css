@@ -342,8 +342,8 @@ Contact
 */
 .main-container {
   background-color: #ebdede;
-  width: 270px;
-  margin: 50px auto;
+  width: 250px;
+  margin: 10px auto;
   padding: 20px 35px;
   border-radius: 10px;
 
@@ -351,9 +351,8 @@ Contact
   animation-duration: 2s;
 }
 .contact-container {
-  height: 30px;
   margin: 20px auto;
-  padding: 10px 0 10px 0px;
+  padding: 15px 0 10px 0px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 30% 70%);
