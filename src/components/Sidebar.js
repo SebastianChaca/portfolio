@@ -4,7 +4,13 @@ import SpainIcon from "./SpainIcon";
 import { navLinks } from "../content/data";
 import { Link } from "react-router-dom";
 
-export default function Sidebar({ open, openBar, handleLanguage, language }) {
+export default function Sidebar({
+  open,
+  openBar,
+  handleLanguage,
+  language,
+  handleRotate,
+}) {
   let content = language === "English" ? navLinks.english : navLinks.spanish;
 
   return (
@@ -12,7 +18,14 @@ export default function Sidebar({ open, openBar, handleLanguage, language }) {
       <ul>
         {content.map((cont, index) => {
           return (
-            <Link to={cont.link} onClick={() => openBar()} key={index}>
+            <Link
+              to={cont.link}
+              onClick={() => {
+                openBar();
+                handleRotate();
+              }}
+              key={index}
+            >
               <li>{cont.nombre}</li>
               <hr />
             </Link>

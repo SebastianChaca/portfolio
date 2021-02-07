@@ -92,7 +92,7 @@ nav ul {
   display: flex;
 }
 .nombre h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .rigth-links {
@@ -188,6 +188,9 @@ nav ul li a:hover:after {
 }
 
 @media screen and (max-width: 1024px) {
+  header {
+    margin-bottom: 20px;
+  }
   nav {
     animation-name: sidebar-out;
     animation-duration: 1s;
@@ -239,7 +242,6 @@ nav ul li a:hover:after {
     font-size: 50px;
   }
   nav h1 {
-    font-size: 30px;
     padding-bottom: 15px;
   }
   nav ul {
@@ -462,9 +464,9 @@ About
   color: black;
   width: 500px;
   height: 400px;
-  margin: 40px auto;
+  margin: 10px auto;
   border-radius: 20px;
-  padding: 30px;
+  padding: 10px 30px;
   animation-name: sidebar-in;
   animation-duration: 2s;
 }
@@ -499,6 +501,6 @@ About
 @media screen and (max-width: 800px) {
   .about-container {
     width: 250px;
-    height: 580px;
+    height: 550px;
   }
 }

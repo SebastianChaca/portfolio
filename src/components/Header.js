@@ -35,6 +35,7 @@ export default function Header({ language, handleLanguage }) {
         openBar={openBar}
         handleLanguage={handleLanguage}
         language={language}
+        handleRotate={handleRotate}
       />
       <header className="header">
         <nav className={open ? `nav-color` : ""}>

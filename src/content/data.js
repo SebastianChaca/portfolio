@@ -20,7 +20,7 @@ export const navLinks = {
   english: [
     {
       nombre: "Home",
-      link: "/home",
+      link: "/",
     },
     {
       nombre: "About",
