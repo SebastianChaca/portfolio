@@ -11,7 +11,14 @@ export default function Header({ language, handleLanguage }) {
   const location = useLocation();
   const [current, setCurrent] = useState("");
   const [open, setOpen] = useState(false);
+  const [rotate, setRotate] = useState(false);
 
+  const handleRotate = () => {
+    setRotate(true);
+    setTimeout(function () {
+      setRotate(false);
+    }, 1000);
+  };
   const openBar = () => {
     setOpen(!open);
   };
@@ -37,9 +44,13 @@ export default function Header({ language, handleLanguage }) {
                 <h1>Sebastian Chaca</h1>
               </div>
               {open ? (
-                <CloseBtn open={open} openBar={openBar} />
+                <CloseBtn
+                  open={open}
+                  openBar={openBar}
+                  handleRotate={handleRotate}
+                />
               ) : (
-                <SpanBtn open={open} openBar={openBar} />
+                <SpanBtn open={open} openBar={openBar} rotate={rotate} />
               )}
               {content.map((cont, index) => {
                 return (
@@ -73,15 +84,3 @@ export default function Header({ language, handleLanguage }) {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,30 +1,33 @@
 import React from "react";
+import { AiFillCloseCircle } from "react-icons/ai";
 
-export const SpanBtn = ({ open, openBar }) => {
+export const SpanBtn = ({ open, openBar, rotate }) => {
   return (
     <button
-      className={` ${open ? `sidebar-btn-close ` : `header-btn`}`}
+      className={!open ? "header-btn" : ""}
       onClick={() => {
         openBar();
       }}
     >
-      <span />
-      <span />
-      <span />
+      <div className={rotate ? "header-btn-rotateY " : ""}>
+        <span />
+        <span />
+        <span />
+      </div>
     </button>
   );
 };
 
-export const CloseBtn = ({ open, openBar }) => {
+export const CloseBtn = ({ open, openBar, handleRotate }) => {
   return (
     <button
-      className={` ${open ? `header-btn-rotate sidebar-btn-close ` : ``}`}
+      className={open ? ` sidebar-btn-close header-btn-rotate` : ""}
       onClick={() => {
+        handleRotate();
         openBar();
       }}
     >
-      <h1>X</h1>
+      <AiFillCloseCircle className="btn-icon " />
     </button>
   );
 };
-
