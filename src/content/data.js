@@ -1,7 +1,7 @@
 import React from "react";
 //contact icons
 import { ImLinkedin } from "react-icons/im";
-
+import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiOutlineGithub } from "react-icons/ai";
 import { MdPhoneAndroid, MdPictureAsPdf } from "react-icons/md";
@@ -83,6 +83,11 @@ export const contactContent = [
     icon: <IoLogoWhatsapp className="wsp" />,
     text: "Whats up",
     link: "https://wa.me/5491165027205",
+  },
+  {
+    icon: <SiGmail className="gmail" />,
+    text: "sebastian.dalinger@gmail.com",
+    email: true,
   },
 
   {
