@@ -1,7 +1,7 @@
 import React from "react";
 //contact icons
 import { ImLinkedin } from "react-icons/im";
-import { SiGmail } from "react-icons/si";
+
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiOutlineGithub } from "react-icons/ai";
 import { MdPhoneAndroid, MdPictureAsPdf } from "react-icons/md";
@@ -73,11 +73,7 @@ export const contactContent = [
 
     link: "https://www.linkedin.com/in/sebastianchaca/",
   },
-  // {
-  //     icon: <SiGmail className="gmail"/>,
-  //     text:'Gmail',
-  //     link:'mailto=sebastian.dalinger@gmail.com'
-  // },
+
   {
     icon: <AiOutlineGithub />,
     text: "GitHub",
