@@ -1,31 +1,25 @@
-import React from 'react'
+import React from "react";
 
-import {aboutContent} from '../content/data'
+import { aboutContent } from "../content/data";
 
+export default function About({ language }) {
+  let content =
+    language === "English" ? aboutContent.english : aboutContent.spanish;
 
-export default function Abour({language}){
-    
-    let content ={}
-    language === 'English' ? content = aboutContent.english : content = aboutContent.spanish
-    return <div className="about-container">
-    
-        <p>
-            {content.text}
-        </p>
-        <p>
-        {content.textTwo}
-        </p>
-        <div className="about-tec">
-            
-            {
-                aboutContent.tec.map(t =>{
-                    return <p>
-                        {t.icon}
-                        {t.name}
-                    </p>
-                })
-            }
-        </div>
-
+  return (
+    <div className="about-container">
+      <p>{content.text}</p>
+      <p>{content.textTwo}</p>
+      <div className="about-tec">
+        {aboutContent.tec.map((t, index) => {
+          return (
+            <p key={index}>
+              {t.icon}
+              {t.name}
+            </p>
+          );
+        })}
+      </div>
     </div>
+  );
 }

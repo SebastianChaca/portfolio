@@ -1,45 +1,38 @@
-import React,{useState, useEffect} from 'react'
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Header from './components/Header'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import About from './pages/About'
-import './App.css';
-
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import "./App.css";
 
 function App() {
-  const [language, setLeng]=useState(false)
-  
-  const handleLanguage=(leng)=>{        
-        setLeng(leng)              
-  }
-  useEffect(()=>{
-    setLeng('Español')
-  },[])
-  
-  
+  const [language, setLeng] = useState("Español");
+
+  const handleLanguage = (leng) => {
+    setLeng(leng);
+  };
+
   return (
     <Router>
-     <Header language={language} handleLanguage={handleLanguage} />
-      
+      <Header language={language} handleLanguage={handleLanguage} />
       <Switch>
         <Route exact path="/">
-          <Home language={language}/>
+          <Home language={language} />
         </Route>
         <Route path="/contact">
           <Contact />
         </Route>
         <Route path="/projects">
-          <Projects language={language}/>
+          <Projects language={language} />
         </Route>
         <Route>
-          <About path="/about" language={language}/>
+          <About path="/about" language={language} />
         </Route>
       </Switch>
     </Router>
-      
-  )
+  );
 }
 
 export default App;
