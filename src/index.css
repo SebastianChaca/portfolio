@@ -330,10 +330,10 @@ Sidebar
 }
 @keyframes sidebar-out {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -411,9 +411,6 @@ Project
   border-radius: 20px;
   animation-name: sidebar-in;
   animation-duration: 2s;
-  position: relative;
-  animation-name: sidebar-in;
-  animation-duration: 2s;
 }
 .projects-container-one {
   width: 350px;
@@ -422,8 +419,6 @@ Project
   text-align: center;
   margin: 30px auto;
   border-radius: 20px;
-
-  position: relative;
 }
 .pagination-on {
   padding-bottom: 5px;
@@ -483,6 +478,11 @@ Project
   text-decoration: none;
   color: white;
 }
+.transition {
+  animation-name: sidebar-in;
+  animation-duration: 1s;
+}
+
 /*
 ======
 Pagination Buttons
@@ -541,6 +541,9 @@ Pagination Buttons
     padding: 25px;
     position: relative;
     z-index: 0;
+  }
+  .projects-container-one {
+    width: 300px;
   }
   .projects-container-grid {
     display: block;

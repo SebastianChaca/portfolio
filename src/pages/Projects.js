@@ -4,6 +4,7 @@ import { paginatedProjects } from "../content/paginate";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 export default function Projects({ language }) {
   const [page, setPage] = useState(0);
+
   return (
     <div
       className={` ${paginatedProjects.length > 1 ? "pagination-on" : ""} ${

@@ -142,8 +142,8 @@ export const projectsContent = [
   {
     img: ReactIcon,
     text: {
-      english: "Source code of this Page",
-      spanish: "Codigo fuente de este Pagina",
+      english: "Example to show pagination",
+      spanish: "Ejemplo para mostrar paginación",
     },
     github: "https://github.com/SebastianChaca/portfolio",
     live: "https://sebastianchaca-portfolio.netlify.app/projects",
