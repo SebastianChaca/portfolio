@@ -191,10 +191,6 @@ nav ul li a:hover:after {
   header {
     margin-bottom: 20px;
   }
-  nav {
-    animation-name: sidebar-out;
-    animation-duration: 1s;
-  }
 
   .rigth-links {
     display: flex;
@@ -409,8 +405,6 @@ Project
   text-align: center;
   margin: 30px auto;
   border-radius: 20px;
-  animation-name: sidebar-in;
-  animation-duration: 2s;
 }
 .projects-container-one {
   width: 350px;
@@ -481,6 +475,10 @@ Project
 .transition {
   animation-name: sidebar-in;
   animation-duration: 1s;
+}
+.transition-init {
+  animation-name: sidebar-in;
+  animation-duration: 2s;
 }
 
 /*
