@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ProjectList from "../components/ProjectList";
 import { paginatedProjects } from "../content/paginate";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
