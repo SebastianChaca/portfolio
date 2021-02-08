@@ -377,7 +377,7 @@ Contact
   margin-left: 35px;
 }
 .notShow {
-  animation-name: sidebar-out;
+  animation-name: sidebar-in;
   animation-duration: 2s;
 }
 .container-text {
