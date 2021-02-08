@@ -1,31 +1,43 @@
-import React from "react";
-import { projectsContent } from "../content/data";
-
+import React, { useState, useEffect } from "react";
+import ProjectList from "../components/ProjectList";
+import { paginatedProjects } from "../content/paginate";
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 export default function Projects({ language }) {
+  const [page, setPage] = useState(0);
   return (
-    <div className="projects-container">
-      {projectsContent.map((proj, index) => {
-        return (
-          <div className="project-card" key={index}>
-            <div className="project-img">
-              <img src={proj.img} alt="" />
-            </div>
-            <div className="project-text">
-              <p>
-                {language === "Español" ? proj.text.spanish : proj.text.english}
-              </p>
-            </div>
-            <div className="project-btns">
-              <button>
-                <a href={proj.github}>Source Code</a>
+    <div
+      className={` ${paginatedProjects.length > 1 ? "pagination-on" : ""} ${
+        paginatedProjects[page].length === 1
+          ? "projects-container-one"
+          : "projects-container"
+      } `}
+    >
+      <ProjectList projects={paginatedProjects[page]} language={language} />
+      {paginatedProjects.length > 1 && (
+        <article className="pagination-buttons">
+          {page > 0 && (
+            <button className="prev-page-btn" onClick={() => setPage(page - 1)}>
+              <FaAngleDoubleLeft />
+            </button>
+          )}
+          {paginatedProjects.map((item, index) => {
+            return (
+              <button
+                onClick={() => setPage(index)}
+                key={index}
+                className={`page-btn ${page === index && `page-btn-current`}`}
+              >
+                {index + 1}
               </button>
-              <button>
-                <a href={proj.live}>Live Project</a>
-              </button>
-            </div>
-          </div>
-        );
-      })}
+            );
+          })}
+          {page < paginatedProjects.length - 1 && (
+            <button className="next-page-btn" onClick={() => setPage(page + 1)}>
+              <FaAngleDoubleRight />
+            </button>
+          )}
+        </article>
+      )}
     </div>
   );
 }

@@ -404,19 +404,43 @@ Project
 */
 .projects-container {
   width: 600px;
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-gap: 15px;
-  text-align: center;
-  margin: 30px auto;
-  color: black;
   background-color: #ebdede;
   padding: 50px 0 50px 0;
+  text-align: center;
+  margin: 30px auto;
   border-radius: 20px;
-  justify-content: center;
   animation-name: sidebar-in;
   animation-duration: 2s;
   position: relative;
+}
+.projects-container-one {
+  width: 350px;
+  background-color: #ebdede;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  margin: 30px auto;
+  border-radius: 20px;
+  animation-name: sidebar-in;
+  animation-duration: 2s;
+  position: relative;
+}
+.pagination-on {
+  padding-bottom: 5px;
+}
+.projects-container-grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 15px;
+  justify-content: center;
+  color: black;
+}
+.projects-container-block {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  color: black;
+  animation-name: sidebar-out;
+  animation-duration: 1s;
 }
 .project-card {
   background-color: white;
@@ -424,6 +448,8 @@ Project
   height: 340px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  animation-name: sidebar-in;
+  animation-duration: 2s;
 }
 .project-img {
   background-color: #191a1d;
@@ -455,17 +481,75 @@ Project
   background-color: #4b6cc1;
   box-shadow: 0 7px 8px -7px black;
 }
+
 .project-btns a {
   text-decoration: none;
   color: white;
 }
+/*
+======
+Pagination Buttons
+======
+*/
+
+.pagination-buttons {
+  margin: 10px auto;
+  padding-top: 15px;
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page-btn,
+.prev-page-btn,
+.next-page-btn {
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  transition: var(--mainTransition);
+  font-size: 0.9rem;
+  color: #000000;
+  border: none;
+}
+.page-btn:hover {
+  background: #000000;
+  color: var(--mainWhite);
+}
+.page-btn-current {
+  background: #000000;
+  color: var(--mainWhite);
+  font-size: 1.2rem;
+}
+.prev-page-btn,
+.next-page-btn {
+  border: none;
+  color: #000000;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  transition: var(--mainTransition);
+}
+.prev-page-btn:hover,
+.next-page-btn:hover {
+  background: #000000;
+  color: white;
+}
 @media screen and (max-width: 800px) {
   .projects-container {
-    display: block;
     width: 250px;
     padding: 25px;
     position: relative;
     z-index: 0;
+  }
+  .projects-container-grid {
+    display: block;
+  }
+  .projects-container-block {
+    width: 250px;
   }
   .project-card {
     margin-top: 5px;
