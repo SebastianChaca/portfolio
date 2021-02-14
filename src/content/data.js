@@ -139,15 +139,6 @@ export const projectsContent = [
     github: "https://github.com/SebastianChaca/portfolio",
     live: "https://sebastianchaca-portfolio.netlify.app/projects",
   },
-  {
-    img: ReactIcon,
-    text: {
-      english: "Example to show pagination",
-      spanish: "Ejemplo para mostrar paginación",
-    },
-    github: "https://github.com/SebastianChaca/portfolio",
-    live: "https://sebastianchaca-portfolio.netlify.app/projects",
-  },
 ];
 export const aboutContent = {
   spanish: {
@@ -158,7 +149,7 @@ export const aboutContent = {
   },
   english: {
     text:
-      "Mi name is Sebastian Aristides Chaca, i'm a student who's looking to get his first job as a developer. I'm currently doing Full Stack Javascript course at NUCBA",
+      "Mi name is Sebastian Aristides Chaca, i'm a student who's looking to get his first job as a developer. I'm currently doing a Full Stack Javascript course at NUCBA",
     textTwo:
       "These are one of the tegnologies that i've been studyng and using in my projects lately:",
   },
