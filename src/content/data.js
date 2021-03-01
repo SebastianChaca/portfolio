@@ -1,57 +1,57 @@
-import React from "react";
+import React from 'react';
 //contact icons
-import { ImLinkedin } from "react-icons/im";
-import { SiGmail } from "react-icons/si";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { AiOutlineGithub } from "react-icons/ai";
-import { MdPhoneAndroid, MdPictureAsPdf } from "react-icons/md";
+import { ImLinkedin } from 'react-icons/im';
+import { SiGmail } from 'react-icons/si';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { MdPhoneAndroid, MdPictureAsPdf } from 'react-icons/md';
 //project icons
-import ReactReduxlogo from "../img/react-redux.png";
-import JsIcon from "../img/js.png";
-import ReactIcon from "../img/reacticon.png";
+import ReactReduxlogo from '../img/react-redux.png';
+import JsIcon from '../img/js.png';
+import ReactIcon from '../img/reacticon.png';
 //tec icons
-import { IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
-import { FaCss3Alt, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiStrapi } from "react-icons/si";
+import { IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
+import { FaCss3Alt, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiStrapi } from 'react-icons/si';
 
-import CV from "../img/SebastianAristidesChacaCV.pdf";
+import CV from '../img/SebastianAristidesChacaCV.pdf';
 
 export const navLinks = {
   english: [
     {
-      nombre: "Home",
-      link: "/",
+      nombre: 'Home',
+      link: '/',
     },
     {
-      nombre: "About",
-      link: "/about",
+      nombre: 'About',
+      link: '/about',
     },
     {
-      nombre: "Projects",
+      nombre: 'Projects',
 
-      link: "/projects",
+      link: '/projects',
     },
     {
-      nombre: "Contact",
-      link: "/contact",
+      nombre: 'Contact',
+      link: '/contact',
     },
   ],
   spanish: [
     {
-      nombre: "Home",
-      link: "/",
+      nombre: 'Home',
+      link: '/',
     },
     {
-      nombre: "Sobre mí",
-      link: "/about",
+      nombre: 'Sobre mí',
+      link: '/about',
     },
     {
-      nombre: "Proyectos",
-      link: "/projects",
+      nombre: 'Proyectos',
+      link: '/projects',
     },
     {
-      nombre: "Contacto",
-      link: "/contact",
+      nombre: 'Contacto',
+      link: '/contact',
     },
   ],
 };
@@ -61,42 +61,42 @@ export const homeContent = {
     text: `I'm Sebastian, Front-end developer from Buenos Aires, Argentina`,
   },
   spanish: {
-    title: "Bienvenido...",
-    text: "Soy Sebastian, Front-end Developer de Buenos Aires, Argentina.",
+    title: 'Bienvenido...',
+    text: 'Soy Sebastian, Front-end Developer de Buenos Aires, Argentina.',
   },
 };
 
 export const contactContent = [
   {
-    icon: <ImLinkedin className="linkedin" />,
-    text: "LinkedIn",
+    icon: <ImLinkedin className='linkedin' />,
+    text: 'LinkedIn',
 
-    link: "https://www.linkedin.com/in/sebastianchaca/",
+    link: 'https://www.linkedin.com/in/sebastianchaca/',
   },
 
   {
     icon: <AiOutlineGithub />,
-    text: "GitHub",
-    link: "https://github.com/SebastianChaca",
+    text: 'GitHub',
+    link: 'https://github.com/SebastianChaca',
   },
   {
-    icon: <IoLogoWhatsapp className="wsp" />,
-    text: "Whats up",
-    link: "https://wa.me/5491165027205",
+    icon: <IoLogoWhatsapp className='wsp' />,
+    text: 'Whats up',
+    link: 'https://wa.me/5491165027205',
   },
   {
-    icon: <SiGmail className="gmail" />,
-    text: "sebastian.dalinger@gmail.com",
+    icon: <SiGmail className='gmail' />,
+    text: 'sebastian.dalinger@gmail.com',
     email: true,
   },
 
   {
     icon: <MdPhoneAndroid />,
-    text: "1565027205",
+    text: '1565027205',
   },
   {
     icon: <MdPictureAsPdf />,
-    text: "CV",
+    text: 'CV',
     link: CV,
   },
 ];
@@ -105,47 +105,83 @@ export const projectsContent = [
     img: ReactReduxlogo,
     text: {
       english:
-        "E-commerce with React, Redeux, Strapi and Mercado Pago Checkout Pro",
+        'E-commerce with React, Redeux, Strapi and Mercado Pago Checkout Pro',
       spanish:
-        "E-commerce con React, Redux, Strapi y Mercado Pago Checkout Pro",
+        'E-commerce con React, Redux, Strapi y Mercado Pago Checkout Pro',
     },
-    github: "https://github.com/SebastianChaca/mtg-e-commerce",
-    live: "https://mtg-ecommerce.netlify.app/",
+    github: 'https://github.com/SebastianChaca/mtg-e-commerce',
+    live: 'https://mtg-ecommerce.netlify.app/',
   },
   {
     img: JsIcon,
     text: {
-      english: "Homebanking simulation with plain JS and Css",
-      spanish: "Simulación de Homebanking con Js y css plano",
+      english: 'Homebanking simulation with plain JS and Css',
+      spanish: 'Simulación de Homebanking con Js y css plano',
     },
-    github: "https://github.com/SebastianChaca/homebanking",
-    live: "https://homebanking-nucba.sebastianchaca.vercel.app/",
+    github: 'https://github.com/SebastianChaca/homebanking',
+    live: 'https://homebanking-nucba.sebastianchaca.vercel.app/',
   },
   {
     img: ReactIcon,
     text: {
-      english: "Bugget Calculator with React and Boostrap",
-      spanish: "Calculadora de presupuesto con React y Boostrap",
+      english: 'Bugget Calculator with React and Boostrap',
+      spanish: 'Calculadora de presupuesto con React y Boostrap',
     },
-    github: "https://github.com/SebastianChaca/React-Budget-Calculator",
-    live: "https://sebastian-chaca-budget-calculator.netlify.app/",
+    github: 'https://github.com/SebastianChaca/React-Budget-Calculator',
+    live: 'https://sebastian-chaca-budget-calculator.netlify.app/',
   },
   {
     img: ReactIcon,
     text: {
-      english: "Source code of this Page",
-      spanish: "Codigo fuente de este Pagina",
+      english: 'Source code of this Page',
+      spanish: 'Codigo fuente de este Pagina',
     },
-    github: "https://github.com/SebastianChaca/portfolio",
-    live: "https://sebastianchaca-portfolio.netlify.app/projects",
+    github: 'https://github.com/SebastianChaca/portfolio',
+    live: 'https://sebastianchaca-portfolio.netlify.app/projects',
+  },
+];
+export const newProjectContent = [
+  {
+    title: 'Ecommerce',
+    img: ReactReduxlogo,
+    text: {
+      english: [
+        {
+          frontTec: 'React, Typescript, Redux, Material-Ui, Css',
+        },
+        {
+          backTec: 'Strapi',
+        },
+        {
+          features:
+            'Login/register, alert messages, map box localization,product pagination,prodcuts filters, shopping cart, checkout with Mercado Pago',
+        },
+      ],
+
+      spanish: [
+        {
+          frontTec:
+            'React, Typescript, Redux, React, Typescript, Redux, Material-Ui, Css',
+        },
+        {
+          backTec: 'Strapi',
+        },
+        {
+          features:
+            'Login/register, alert messages, map box localization,product pagination,prodcuts filters, shopping cart, checkout with Mercado Pago',
+        },
+      ],
+    },
+    github: 'https://github.com/SebastianChaca/ts-mtg-ecommerce',
+    live: 'schaca-ecommerce.netlify.app',
   },
 ];
 export const aboutContent = {
   spanish: {
     text:
-      "Me llamo Sebastian Aristides Chaca, soy estudiante y estoy buscando conseguir mi primer trabajo como programador. Actualmente me encuentro realizando un curso de Full Stack de Javascript en NUCBA.",
+      'Me llamo Sebastian Aristides Chaca, soy estudiante y estoy buscando conseguir mi primer trabajo como programador. Actualmente me encuentro realizando un curso de Full Stack de Javascript en NUCBA.',
     textTwo:
-      "Estas son algunas de las tecnologías que estuve estudiando y utilizando en mis proyectos últimamente:",
+      'Estas son algunas de las tecnologías que estuve estudiando y utilizando en mis proyectos últimamente:',
   },
   english: {
     text:
@@ -155,28 +191,28 @@ export const aboutContent = {
   },
   tec: [
     {
-      name: "Html",
-      icon: <IoLogoHtml5 className="html icon" />,
+      name: 'Html',
+      icon: <IoLogoHtml5 className='html icon' />,
     },
     {
-      name: "Css",
-      icon: <FaCss3Alt className="css icon" />,
+      name: 'Css',
+      icon: <FaCss3Alt className='css icon' />,
     },
     {
-      name: "Javascript",
-      icon: <IoLogoJavascript className="js icon" />,
+      name: 'Javascript',
+      icon: <IoLogoJavascript className='js icon' />,
     },
     {
-      name: "Node Js",
-      icon: <FaNodeJs className="node icon" />,
+      name: 'Node Js',
+      icon: <FaNodeJs className='node icon' />,
     },
     {
-      name: "React js",
-      icon: <FaReact className="react icon" />,
+      name: 'React js',
+      icon: <FaReact className='react icon' />,
     },
     {
-      name: "Strapi",
-      icon: <SiStrapi className="strapi icon" />,
+      name: 'Strapi',
+      icon: <SiStrapi className='strapi icon' />,
     },
   ],
 };
