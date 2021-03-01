@@ -150,11 +150,11 @@ export const newProjectContent = [
           frontTec: 'React, Typescript, Redux, Material-Ui, Css',
         },
         {
-          backTec: 'Strapi',
+          backTec: 'Strapi with mongoDB Atlas and cloudinary',
         },
         {
           features:
-            'Login/register, alert messages, map box localization,product pagination,prodcuts filters, shopping cart, checkout with Mercado Pago',
+            'Login/register, alert messages, map box localization,product pagination,products filters, shopping cart, checkout with Mercado Pago, responsive design.',
         },
       ],
 
@@ -164,11 +164,11 @@ export const newProjectContent = [
             'React, Typescript, Redux, React, Typescript, Redux, Material-Ui, Css',
         },
         {
-          backTec: 'Strapi',
+          backTec: 'Strapi with mongoDB Atlas and cloudinary',
         },
         {
           features:
-            'Login/register, alert messages, map box localization,product pagination,prodcuts filters, shopping cart, checkout with Mercado Pago',
+            'Login/register, alert messages, map box localization,product pagination,products filters, shopping cart, checkout with Mercado Pago, responsive design.',
         },
       ],
     },
