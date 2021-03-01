@@ -12,7 +12,7 @@ import ReactIcon from '../img/reacticon.png';
 //tec icons
 import { IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
 import { FaCss3Alt, FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiStrapi } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
 
 import CV from '../img/SebastianAristidesChacaCV.pdf';
 
@@ -211,8 +211,8 @@ export const aboutContent = {
       icon: <FaReact className='react icon' />,
     },
     {
-      name: 'Strapi',
-      icon: <SiStrapi className='strapi icon' />,
+      name: 'Typescript',
+      icon: <SiTypescript className='typescript icon' />,
     },
   ],
 };

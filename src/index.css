@@ -601,6 +601,9 @@ About
 .strapi {
   color: blueviolet;
 }
+.typescript {
+  color: blue;
+}
 @media screen and (max-width: 800px) {
   .about-container {
     width: 250px;
