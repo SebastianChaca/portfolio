@@ -160,8 +160,7 @@ export const newProjectContent = [
 
       spanish: [
         {
-          frontTec:
-            'React, Typescript, Redux, React, Typescript, Redux, Material-Ui, Css',
+          frontTec: 'React, Typescript, Redux, Material-Ui, Css',
         },
         {
           backTec: 'Strapi with mongoDB Atlas and cloudinary',
