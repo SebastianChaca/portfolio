@@ -172,7 +172,7 @@ export const newProjectContent = [
       ],
     },
     github: 'https://github.com/SebastianChaca/ts-mtg-ecommerce',
-    live: 'https://schaca-ecommerce.netlify.app',
+    live: 'https://sebastianchaca-ecommerce.netlify.app',
   },
 ];
 export const aboutContent = {
