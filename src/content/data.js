@@ -174,6 +174,41 @@ export const newProjectContent = [
     github: 'https://github.com/SebastianChaca/ts-mtg-ecommerce',
     live: 'https://sebastianchaca-ecommerce.netlify.app',
   },
+  {
+    title: 'Bar Ecommerce',
+    img: JsIcon,
+    text: {
+      english: [
+        {
+          frontTec: 'Plain Javascript and Css',
+        },
+        {
+          backTec: 'Strapi with mongoDB Atlas and cloudinary',
+        },
+        {
+          features:
+            'Login/register, product display and detail, shopping cart, CRUD dashboard for products and sections',
+        },
+      ],
+
+      spanish: [
+        {
+          frontTec: 'Javascript plano y Css',
+        },
+        {
+          backTec: 'Strapi with mongoDB Atlas and cloudinary',
+        },
+        {
+          features:
+            'Loguearse/registrarse, display de productos con secciones y detalle, carrito de compras y dashboard para CRUD de  productos y secciones',
+        },
+      ],
+    },
+    dashboard:true,
+    dashLink:'https://nucbar.vercel.app/dashboard.html',
+    github: 'https://github.com/SebastianChaca/ecommerce-vanilla-js',
+    live: 'https://nucbar.vercel.app/',
+  },
 ];
 export const aboutContent = {
   spanish: {

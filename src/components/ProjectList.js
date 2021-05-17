@@ -39,11 +39,18 @@ const ProjectList = ({ projects, language }) => {
             </div>
             <div className='project-btns'>
               <button>
-                <a href={proj.github}>Source Code</a>
+                <a href={proj.github} rel='noreferrer' target='_blank'>Source Code</a>
               </button>
               <button>
-                <a href={proj.live}>Live Project</a>
+                <a href={proj.live} rel='noreferrer' target='_blank'>Live Project</a>
               </button>
+              {
+                proj.dashboard && 
+
+                <button>
+                <a href={proj.dashLink} rel='noreferrer' target='_blank'>Dashboard</a>
+                </button>
+              }
             </div>
           </div>
         );
