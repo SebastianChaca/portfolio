@@ -458,6 +458,8 @@ Project
 
 .project-btns {
   margin-top: 20px;
+ 
+  
 }
 .project-btns button {
   margin: 10px;
@@ -556,6 +558,12 @@ Pagination Buttons
     
     height: 750px;
     width: 250px;
+  }
+  .project-btns{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
   }
   .project-btns a {
     position: relative;
