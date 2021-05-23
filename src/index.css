@@ -543,7 +543,7 @@ Pagination Buttons
   }
   .projects-container-one {
     width: 300px;
-    height: 730px;
+    height: 780px;
   }
   .projects-container-grid {
     display: block;
@@ -552,9 +552,10 @@ Pagination Buttons
     width: 250px;
   }
   .project-card {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    height: 700px;
+    margin: 0 auto;
+    
+    height: 750px;
+    width: 250px;
   }
   .project-btns a {
     position: relative;
