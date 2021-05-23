@@ -209,6 +209,41 @@ export const newProjectContent = [
     github: 'https://github.com/SebastianChaca/ecommerce-vanilla-js',
     live: 'https://nucbar.vercel.app/',
   },
+  {
+    title: 'ABM Alkemy.org Challenge ',
+    img:ReactIcon,
+    text: {
+      english: [
+        {
+          frontTec: 'React Js, Apollo Client, Chakra UI',
+        },
+        {
+          backTec: 'Apollo server, Graph Ql, mongoose and Mongo DB atlas',
+        },
+        {
+          features:
+            'Login/register, product CRUD and categories filter',
+        },
+      ],
+
+      spanish: [
+        {
+          frontTec: 'React Js, Apollo Client, Chakra UI',
+        },
+        {
+          backTec: 'Apollo server, Graph Ql, mongoose y Mongo DB atlas',
+        },
+        {
+          features:
+            'Loguearse/registrarse, CRUD de productos y filtrado por categoría',
+        },
+      ],
+    },
+    backend:true,
+    backLink:'https://github.com/SebastianChaca/Alkemy-Challenge-Backend',
+    github: 'https://github.com/SebastianChaca/Alkemy-Challenge-Frontend',
+    live: 'https://alkemychallenge-jc2mvl194-sebastianchaca.vercel.app/login',
+  },
 ];
 export const aboutContent = {
   spanish: {
