@@ -14,7 +14,7 @@ import { IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
 import { FaCss3Alt, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 
-import CV from '../img/SebastianAristidesChacaCV.pdf';
+import CV from '../img/SebastianChaca.pdf';
 
 export const navLinks = {
   english: [
